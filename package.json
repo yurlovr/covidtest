@@ -1,0 +1,29 @@
+{
+  "name": "covid_back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "mongoose": "^5.9.7",
+    "mongoose-beautiful-unique-validation": "^7.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurlovr/covid19.git"
+  },
+  "author": "smoke59",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yurlovr/covid19/issues"
+  },
+  "homepage": "https://github.com/yurlovr/covid19#readme"
+}
