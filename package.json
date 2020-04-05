@@ -1,7 +1,6 @@
 {
   "name": "covid_back",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "koa": "^2.11.0",
@@ -26,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/yurlovr/covid19/issues"
   },
-  "homepage": "https://github.com/yurlovr/covid19#readme"
+  "homepage": "https://github.com/yurlovr/covid19#readme",
+  "description": ""
 }
