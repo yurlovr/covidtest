@@ -9,7 +9,7 @@ const handleMongooseValidationError = require('./libs/validationError');
 const app = new Koa();
 
 app.use(cors())
-app.use(serve('./public'))
+app.use(serve('public'))
 app.use(require('koa-bodyparser')());
 app.use(async (ctx, next) => {
   try {
