@@ -11,6 +11,9 @@ const dataSchema = new mongoose.Schema({
   },
   answers: {
       type: Array
+  },
+  time: {
+    type: String
   }
 });
 
