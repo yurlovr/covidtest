@@ -6,6 +6,7 @@ const { setData } = require('./controllers/setData')
 const { getCount } = require('./controllers/getCount')
 const { getCountBot } = require('./controllers/getCountBot')
 const { getCountBotAnswer } = require('./controllers/getCountBotAnswer')
+const { getCountBotDelete } = require('./controllers/getCountBotDelete')
 const handleMongooseValidationError = require('./libs/validationError');
 
 const app = new Koa();
@@ -35,6 +36,8 @@ router.post('/count', handleMongooseValidationError, getCount)
 router.post('/countBot', handleMongooseValidationError, getCountBot)
 
 router.post('/countBotAnswer', handleMongooseValidationError, getCountBotAnswer)
+
+router.post('/countBotDelete', handleMongooseValidationError, getCountBotDelete)
 
 
 app.use(router.routes())
