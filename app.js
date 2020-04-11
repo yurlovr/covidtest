@@ -4,6 +4,8 @@ const cors = require('@koa/cors')
 const serve = require('koa-static')
 const { setData } = require('./controllers/setData')
 const { getCount } = require('./controllers/getCount')
+const { getCountBot } = require('./controllers/getCountBot')
+const { getCountBotAnswer } = require('./controllers/getCountBotAnswer')
 const handleMongooseValidationError = require('./libs/validationError');
 
 const app = new Koa();
@@ -29,6 +31,10 @@ const router = new Router({prefix: '/api'})
 router.post('/data', handleMongooseValidationError, setData)
 
 router.post('/count', handleMongooseValidationError, getCount)
+
+router.post('/countBot', handleMongooseValidationError, getCountBot)
+
+router.post('/countBotAnswer', handleMongooseValidationError, getCountBotAnswer)
 
 
 app.use(router.routes())

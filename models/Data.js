@@ -14,6 +14,9 @@ const dataSchema = new mongoose.Schema({
   },
   time: {
     type: String
+  },
+  bot: {
+    type: Boolean
   }
 });
 
