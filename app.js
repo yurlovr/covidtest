@@ -12,8 +12,8 @@ const handleMongooseValidationError = require('./libs/validationError');
 const app = new Koa();
 
 app.use(cors())
+app.use(require('koa-bodyparser')())
 app.use(serve('public'))
-app.use(require('koa-bodyparser')());
 app.use(async (ctx, next) => {
   try {
     await next()
@@ -38,7 +38,6 @@ router.post('/countBot', handleMongooseValidationError, getCountBot)
 router.post('/countBotAnswer', handleMongooseValidationError, getCountBotAnswer)
 
 router.post('/countBotDelete', handleMongooseValidationError, getCountBotDelete)
-
 
 app.use(router.routes())
 

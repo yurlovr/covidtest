@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "koa": "^2.11.0",
     "@koa/cors": "^3.0.0",
+    "koa": "^2.11.0",
     "koa-bodyparser": "^4.3.0",
-    "koa-router": "^8.0.8",
+    "koa-conditional-get": "^2.0.0",
     "koa-mount": "^4.0.0",
+    "koa-router": "^8.0.8",
     "koa-static": "^5.0.0",
     "mongoose": "^5.9.7",
     "mongoose-beautiful-unique-validation": "^7.1.1"
